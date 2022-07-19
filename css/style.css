@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #3A3A3A;
+    background-color: #fff;
+    
+}
+
+header ,main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+nav{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;  
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 3px 10px;
+    margin-left: .5rem;
+    text-decoration: none;
+    color: #3A3A3A;
+    transition: all .2s;
+    position: relative;
+    
+   
+}
+nav ul li:hover{
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transform: translateY(-3px) scale(1.2);
+}
+
+nav li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.header-content{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem; 
+
+}
+.header-content-text{
+    width: 50%;
+}
+
+.heading-large{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: .5rem;
+}
+
+.btn-link{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: .5rem 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 400;  
+    transition: all .2s; 
+}
+.btn-round{
+    border-radius: 50px;
+}
+.btn-link:hover{
+    transform: scale(1.1) translateY(-3px);
+}
+.header-content-image{
+    padding-bottom: 3rem;
+    margin: 0 0 3rem 9rem;
+    width: 50%;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-image{
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.section-brand{
+    width: 80%;
+    padding-bottom: 8rem;
+}
+.brands-container{
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+    border-width: 2px;
+    border-style: solid;
+    border-color: red; 
+    border-image: linear-gradient(90deg, #fff 0%,  rgb(190, 190, 190) 50%, #fff 100%) 1;   
+}
+.section-collection{
+    width: 80%;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.section-title{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.card{
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.card-image{
+    width: 100%;
+}
+.card-title{
+    font-weight: 500;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card-rating{
+    display: flex;
+    align-items: center;
+    margin-top: .3rem;
+}
+
+.fa-solid.fill-orange{
+    color: orange;
+    font-size: .6rem;
+}
+
+.rating-point{
+    margin-left: .5rem;
+    font-size: .8rem;
+    color: #5E6366;
+
+}
+.card-details p{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #5E6366;
+}
+.btn-container{
+  display: block;
+  text-align: right;
+  margin-right: 3rem;
+
+}
+
+.btn-text{
+    display: inline-block;
+    text-decoration: none;
+    justify-content: end;
+    color: #E02C6D;
+    padding: 3px 10px;
+    font-weight: 700;
+    transition: all .2s;
+}
+
+.btn-text:hover{
+    color: white;
+    background-color: #E02C6D;
+    padding: 3px 10px;
+    transform: translateY(-3px);
+}
+
+.section-featured{
+    width: 80%;
+    display: flex;
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+    
+}
+.featured-img-box{
+    width: 40%;
+    
+}
+.featured-image{
+   width: 100%;
+}
+
+.featured-text-box{
+    margin-top: 2rem;
+    margin-left: 6rem;
+    width: 60%;
+}
+.heading-medium{
+    font-size: 2rem;
+    color: black;
+}
+.featured-text-box p{
+    font-weight: 700;
+    color: #5E6366;
+}
+footer{
+    background-color: #0A0826;
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+footer p{
+    font-size: .8rem;
+}
+.link-container{
+    display: flex;
+    justify-content: center;
+    margin: .7rem 0;
+}
+.link-box{
+    background-color: rgba(41, 36, 83, 0.6);
+    height: 2rem;
+    width: 2rem;
+    margin: .5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.link-box a{
+    color: white;
+}
