@@ -60,11 +60,11 @@ nav li a{
 
 }
 .header-content-text{
-    width: 50%;
+    width: 55%;
 }
 
 .heading-large{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-top: 4rem;
     margin-bottom: .5rem;
 }
@@ -88,7 +88,7 @@ nav li a{
 .header-content-image{
     padding-bottom: 3rem;
     margin: 0 0 3rem 9rem;
-    width: 50%;
+    width: 45%;
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: 90%;
@@ -96,6 +96,7 @@ nav li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .header-image{
     width: 80%;
@@ -247,6 +248,11 @@ footer p{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: all .2s;
+}
+
+.link-box:hover{
+    transform: scale(1.1) translateY(-3px);
 }
 
 .link-box a{
